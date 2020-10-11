@@ -1,0 +1,26 @@
+.box{
+	width: 100%;
+	margin:4rem auto;
+	margin-right: -20rem;
+
+	@include respond(tab-port){
+		margin-right: 0;
+	}
+	&__content{
+	background-color:#f88379;
+	border-radius: 1rem;
+	padding: 2rem;
+	transition: all .5s;
+	box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&:hover{
+		transform: scale(1.1);
+	}
+
+
+	}
+
+}

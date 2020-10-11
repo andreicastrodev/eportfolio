@@ -1,0 +1,94 @@
+.pops{
+
+	position: fixed;
+	height: 100vh;
+	width: 100%;
+	background-color: rgba($color-black, .4);
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .5s ease-in;
+	z-index: 100;
+
+	&:target{
+	opacity: 1;
+	visibility: visible;
+	}
+
+
+
+
+	&__container{
+
+		width: 80%;
+		height: 80vh;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 5rem;
+		background-image: linear-gradient(-105deg,
+		rgba($color-pink-light, 1), 50%,
+		$color-light-blue 50%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@include respond(phone){
+			flex-direction: row;
+		}
+	}
+
+
+
+	&__text-box{
+		flex: 0 0 50%;
+		background-color: rgba($color-white, .5);
+		padding: 2rem;
+		margin-right: 2rem;
+		border-radius: 4rem;
+	    transition: all .2s;
+
+		@include respond(phone){
+			flex: 0 0 100%;
+			margin-right: 0rem;
+		}
+			&:hover{
+				transform: scale(1.1);
+			}
+	}
+
+	&__text{
+		color: $color-black;
+		font-size:1.6rem;
+		font-weight: 400;
+		text-align: left;
+
+		@include respond(phone){
+				font-size: 1.8rem;
+		}
+
+	}
+
+
+
+	&__img{
+
+		&-1{
+			margin-left: auto;
+			width: 100%;
+			height: 46vh;
+			border-radius: 4rem;
+			transition: all .2s;
+
+
+		@include respond(phone){
+			visibility: none;
+			opacity: 0;
+		}			
+
+		}
+	}
+}

@@ -1,0 +1,49 @@
+.section-me{
+	background-image: linear-gradient(105deg,
+	rgba($color-light-blue, 1), 50%,
+	$color-pink-light 50%);
+	padding-top: 12rem;
+	height: 95vh;
+
+}
+
+.section-games{	
+	background-image: linear-gradient(-106deg,
+	rgba($color-greys, 1), 50%,
+	$color-red-pink 50%);
+	padding-top: 5rem;
+	height: 95vh;
+}
+
+
+
+
+.section-music{
+	background-image: linear-gradient(104deg,
+	rgba($color-green, 1), 50%,
+	$color-corn 50%);
+	padding-top: 15rem;
+	height: 95vh;
+
+}
+
+.section-techno{	
+	background-image: linear-gradient(-106deg,
+	rgba($color-chan, 1), 50%,
+	$color-tony 50%);
+	padding-top: 5rem;
+	height: 95vh;
+}
+
+
+.section-about{
+background-color: #c278f8;
+text-align: center;
+padding: 2rem;
+}
+
+.section-quote{
+	padding: 15rem 0;
+	position: relative;
+	height: 10vh;
+}

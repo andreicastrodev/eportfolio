@@ -1,0 +1,59 @@
+.me{
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 8rem;
+
+	@include respond(phone){
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;	
+		margin-top: 0rem;
+	}
+	&__block{
+		color: $color-white;
+		font-size: 7rem;
+		font-weight: 700;
+		text-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+		@include respond(tab-port){
+			font-size: 4rem;
+		}
+
+		@include respond(phone){
+			font-size: 4rem;
+			margin-bottom: 2rem;
+			margin-top: 2rem;
+		}
+
+
+		&--2{
+			order: 10;
+		}
+
+     }
+	
+
+
+	&__img{
+			width:35%;
+			height: auto;
+			border-radius: 5rem;
+			transition: all .3s; 
+			 box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+			 flex-wrap: wrap;
+			&:hover{
+				transform: scale(1.1);
+			}
+
+		@include respond(tab-port){
+			width: 50%;
+		}
+
+			@include respond(phone){
+				width: 70%;
+				border-radius: 1rem;
+				margin-bottom: 2rem;
+			}
+	}
+}

@@ -1,0 +1,41 @@
+.techno{
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 2rem;
+
+	@include respond(phone){
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	&__info{
+		flex: 0 0 40%;
+		color: $color-white;
+		font-size:  2rem;
+		font-weight: 400;
+		text-shadow: 0 1.5rem 4rem rgba($color-black, .25);		
+
+		@include respond(phone){
+			text-align: center;
+			margin-bottom: 2rem;
+		}
+	}
+
+	&__img{
+		width: 30%;
+		flex: 0 0 50%;
+		border-radius: 3rem;
+		box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
+		transition: all .2s;
+
+	@include respond(phone){
+	width:90%;
+	margin-top: 2rem;
+	}
+
+		&:hover{
+			transform: scale(1.1);
+		}
+	}
+}
